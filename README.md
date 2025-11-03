@@ -13,3 +13,6 @@
 4. Players and Coaches (Includes info on the players and coaches in the first team)
 
 5. Statistics (Includes statistics on the club)
+
+## **Footer:**
+* This includes links to files such as sources, or social media profiles.
