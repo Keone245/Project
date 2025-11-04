@@ -16,3 +16,9 @@
 
 ## **Footer:**
 * This will include links to files such as sources, copyright notices, and social media profiles.
+
+## **Implementation of JS:**
+* We can use JS to replicate famous moments that Real Madrid made. In case that we can not use a video due to copyright purposes, we will replicate it instead by using JS to make 2d/3d graphics to showcase it. We will also be using JS lessons from the first quarter such as arrays to display statistics such as goals and assists.
+
+## **Link to initial mockup of proposed webpages:**
+* https://www.canva.com/design/DAG3uSyHjmk/1X2JETN7pHehycZVgCpiHQ/edit?utm_content=DAG3uSyHjmk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
