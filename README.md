@@ -6,13 +6,13 @@
 ## **Pages:** 
 1. Home (Includes the description above)
 
-2. History (Includes basic info on the history of the club)
+2. History (Includes basic info on the history of the club, including different eras)
 
-3. Current (Includes info on the club nowadays)
+3. Current (Includes info on the club nowadays such as their current season and players)
 
 4. Players and Coaches (Includes info on the players and coaches in the first team)
 
-5. Statistics (Includes statistics on the club)
+5. Statistics (This includes statistics on the club, such as trophies won or goals scored)
 
 ## **Footer:**
-* This includes links to files such as sources, or social media profiles.
+* This will include links to files such as sources, copyright notices, and social media profiles.
