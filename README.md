@@ -3,6 +3,8 @@
 ## **Description:**
 * As a diehard Real Madrid for 3 years now, it was hard not to make something about the best football club in history. This website has information on the men's team. From the history of the club, to the present day. A look at the players and the coaching, and some statistics, this website has everything about Real Madrid.
 
+* Real Madrid is known for their success, history, glory, and their "Remontadas" which means comebacks. There are so many cases where they find themselves at the brink of defeat, but they always find a way to win, and there is a reason they had 15 Champions League trophies, the most out of any European club. I have been lucky enough to witness these Remontadas live on the TV.
+
 ## **Pages:** 
 1. Home (Includes the description above)
 
