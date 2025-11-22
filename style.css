@@ -1,0 +1,14 @@
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/005/961/252/small/top-view-of-green-football-pitch-or-soccer-field-vector.jpg);
+    background-repeat: no-repeat;
+    background-size; cover;
+    background-position: center center;
+    font-family: 'Inter', sans-serif;
+
+}
+header {
+    color:goldenrod;
+}
+section {
+    color:black;
+}
