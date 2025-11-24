@@ -1,11 +1,9 @@
 body {
     background-image: url(https://icdn.football-espana.net/wp-content/uploads/2025/01/santiago-bernabeu-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size: 115%;
+   
     font-family: 'Ultra', sans-serif;
-    height: 100%;
-    margin-left: 40px;
     color:white;
     text-align: justify;
     
