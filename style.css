@@ -1,21 +1,27 @@
 body {
-    background-image: url(https://icdn.football-espana.net/wp-content/uploads/2025/01/santiago-bernabeu-1.jpg);
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a2/f4/1c/stadio-santiago-bernabeu.jpg?w=900&h=500&s=1);
     background-repeat: no-repeat;
-    background-size: 115%;
-   
+    background-size: 110%;
+    
     font-family: 'Ultra', sans-serif;
     color:white;
-    text-align: justify;
     
 }
 header {
-    color:goldenrod;
+    color:rebeccapurple;
     font-size: 33px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 section {
-    color:white;
+    color:rebeccapurple;
     font-size: 23px;
+    margin-left: 20px;
+    text-align: justify;
 }
 .firstDiv {
-    color:white;
+    color:rebeccapurple;
+    margin-left: 20px;
+    font-size: 24px;
+    text-align: justify;
 }
