@@ -1,26 +1,28 @@
 body {
-    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a2/f4/1c/stadio-santiago-bernabeu.jpg?w=900&h=500&s=1);
-    background-repeat: no-repeat;
-    background-size: 110%;
-    
+    background-color: steelblue;
+    background-size: 100%;
     font-family: 'Ultra', sans-serif;
     color:white;
     
 }
-header {
-    color:rebeccapurple;
-    font-size: 33px;
-    margin-left: 20px;
-    margin-top: 10px;
+.cover-background-section {
+    background-color: darkslateblue;
+    font-size: 28px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cover-background-section header {
+    color:white;
 }
 section {
-    color:rebeccapurple;
+    color:white;
     font-size: 23px;
     margin-left: 20px;
     text-align: justify;
 }
 .firstDiv {
-    color:rebeccapurple;
+    color:white;
     margin-left: 20px;
     font-size: 24px;
     text-align: justify;
