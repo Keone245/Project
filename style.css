@@ -40,3 +40,22 @@ body {
     display: flex;
     flex: 0 0 50%;
 }
+.main-nav {
+    width: 100%;
+}
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.main-nav li {
+    margin: 0;
+}
+.main-nav a {
+    text-decoration: none;
+    color: burlywood;
+    padding: 15px 20px;
+    display: block;
+}
