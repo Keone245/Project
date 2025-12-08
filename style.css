@@ -18,7 +18,7 @@ body {
 .mid-section-container {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0;
     padding-top: 50px;
