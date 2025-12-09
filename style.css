@@ -63,6 +63,14 @@ body {
 .main-nav a:hover {
     background-color: cadetblue;
 }
+footer {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
 .my-image {
   max-width: 10%;   /* scales down on small screens */
   height: auto;      /* keeps proportions */
