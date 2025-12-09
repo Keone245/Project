@@ -69,3 +69,11 @@ body {
   display: block;
   margin: 0;    /* centers */
 }
+.secondDiv {
+    color:white;
+    margin-left: 20px;
+    font-size: 23px;
+    text-align: justify;
+    display: flex;
+    flex: 0 0 50%;
+}
