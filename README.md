@@ -44,3 +44,22 @@
     G: 22
     A: 19
 
+## **Sources: **
+* Kylian Mbappe | Biography & Facts | Britannica
+
+Jude Bellingham | Soccer, Career, Life, England, Real Madrid, Borussia Dortmund, Birmingham City, & Facts | Britannica
+
+https://www.britannica.com/biography/Vinicius-Junior
+
+https://www.britannica.com/topic/Real-Madrid
+
+​​https://www.transfermarkt.com/kylian-mbappe/leistungsdaten/spieler/342229/saison/2024#google_vignette
+
+https://www.transfermarkt.com/jude-bellingham/leistungsdaten/spieler/581678/saison/2024/wettbewerb/ES1
+
+https://www.transfermarkt.com/vinicius-junior/leistungsdaten/spieler/371998/saison/2024/wettbewerb/CL
+
+
+
+
+
