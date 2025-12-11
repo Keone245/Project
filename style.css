@@ -35,7 +35,7 @@ body {
 .firstDiv {
     color:white;
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 18px;
     text-align: justify;
     display: flex;
     flex: 0 0 50%;
@@ -63,12 +63,30 @@ body {
 .main-nav a:hover {
     background-color: cadetblue;
 }
+footer {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
 .my-image {
-  max-width: 10%;   /* scales down on small screens */
-  height: auto;      /* keeps proportions */
-  display: block;
-  margin-top: 100px;
-  margin-bottom: 0px;
-  margin-right: 1000px;
-  margin-left: 0px;
+  
+}
+.secondDiv {
+    color:white;
+    margin-right: 20px;
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    flex: 0 0 50%;
+}
+.thirdDiv {
+    color:white;
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    flex: 0 0 50%;
 }

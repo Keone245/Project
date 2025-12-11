@@ -30,4 +30,36 @@
 
 * Jude Bellingham - Jude was born on June 29, 2003 in Sturridge, England. His mom is of African descent, and his dad with Irish and English ancestry. When he was a kid, he joined Birmingham City FC’s U8 team. He rose rapidly through the ranks, and at just 14 years old, made the U18 team. He also joined the U23 team a few months before his 16th birthday. He was the youngest player to debut for the club at 16 years and 38 days. Nowadays, he is regarded as a legend there. He joined German giants Borussia Dortmund in the 20-21 season. There, he would make a name for himself, and continue to improve. Though he wasn’t able to win the Bundesliga, his stint at Dortmund is still highly regarded as impressive. He joined Real Madrid in the summer of ‘23. He was unable to stop scoring goals in his first few matches. He would finish the season with Laliga and the UCL title secured. He is already considered a club legend after just 3 seasons with the club.
 
-* Vini Jr. - Vini was born in
+* Vinicius Jr. - Vini was born in Brazil on July 12, 2000. As a child, he used to play at the academy for Flamengo, where it would be a struggle since he had to travel 70km twice a day to get to the training facility. Once he turned 16, he signed his first professional contract with Flamengo. Though he was just playing in the Brazilian league, he was already well known globally, and when he turned 18, Real Madrid bought him for 46 million Euros. He debuted for Los Blancos in September of 2018 against Atletico. He won LaLiga titles in 2019-20, 2021-22, and 2023-24. He also won the UCL for Real Madrid in the 2021-22 season, and 2023-24 season, where he would score in both finals, against Liverpool and Borussia Dortmund. Though these past few seasons have been tough for him, he still has a bright future ahead, and many more trophies to win.
+
+## **Statistics: **
+* 2023-2024 season:
+* Mbappe:
+    G: 44
+    A: 5
+* Bellingham:
+    G: 15
+    A: 15
+* Vini Jr.:
+    G: 22
+    A: 19
+
+## **Sources: **
+* Kylian Mbappe | Biography & Facts | Britannica
+
+Jude Bellingham | Soccer, Career, Life, England, Real Madrid, Borussia Dortmund, Birmingham City, & Facts | Britannica
+
+https://www.britannica.com/biography/Vinicius-Junior
+
+https://www.britannica.com/topic/Real-Madrid
+
+​​https://www.transfermarkt.com/kylian-mbappe/leistungsdaten/spieler/342229/saison/2024#google_vignette
+
+https://www.transfermarkt.com/jude-bellingham/leistungsdaten/spieler/581678/saison/2024/wettbewerb/ES1
+
+https://www.transfermarkt.com/vinicius-junior/leistungsdaten/spieler/371998/saison/2024/wettbewerb/CL
+
+
+
+
+
