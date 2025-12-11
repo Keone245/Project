@@ -67,5 +67,8 @@ body {
   max-width: 10%;   /* scales down on small screens */
   height: auto;      /* keeps proportions */
   display: block;
-  margin: 0;    /* centers */
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-right: 1000px;
+  margin-left: 0px;
 }
