@@ -72,10 +72,7 @@ footer {
 
 }
 .my-image {
-  max-width: 10%;   /* scales down on small screens */
-  height: auto;      /* keeps proportions */
-  display: block;
-  margin: 0;    /* centers */
+  
 }
 .secondDiv {
     color:white;
