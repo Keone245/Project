@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="cover-background-section">
+  <header>
+    <h1>RMA: A Look at the World's Best Club</h1>
+  </header>
+  </div>
+
+  <nav class="main-nav">
+    <h2 style="color:white;">Pages</h2>
+    <ul>
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="current.html">Current</a>
+      <a href="players&coaches.html">Players and Coaches</a>
+      <a href="statistics.html">Statistics</a>
+      <a href="sources.html">Sources</a>
+      <a href="quiz.html"> Quiz</a>
+    </ul>
+  </nav>
+
+  <div class="mid-section-container">
+
+  <div class="cover-content"> 
+    <h2 style="color:white;">About us</h2>
+    <p>Here is a quiz to test your knowledge on Real Madrid!</p>
+  </div>
+  
+
+  <div class="firstDiv"> 
+    <script>
+    document.write("<p>Guess the number of time we won the UCL!: ****</p>"); 
+    document.write("<p>The number is between 1 and 15</p>"); 
+   </script>
+
+   <input id="userGuess" type ="number" placeholder="Enter your guess here ">
+
+   <button type="button" onclick="checkIt()"> Check it </button>
+
+   <div id="checkIt"></div>
+
+    <script>
+
+        function checkIt() {
+            var userGuess = document.getElementById("userGuess").value;
+            dNumber = 15
+
+            if (userGuess == dNumber){
+                document.write(<p> result: Congratulations! You guessed the number!</p>);
+            } else if (userGuess < dNumber) {
+                document.write(<p> Result: Higher!</p>);
+            } else if (userGuess > dNumber) {
+                document.write(<p> Result: Lower!</p>);
+            } else {
+                document.write(<p> Invalid! Please enter a number between 1 and 100.</p>);
+            }
+            document.getElementById("checkIt").innerHTML = "<p>Congrats</p>";  
+        }
+    </script>
+
+  <div class="my-image">
+    
+  </div>
+  
+  </div>
+  </div>
+
+  <div>
+  <footer>
+    <p>&copy; 2025 David Babaran and Keone Robles</p>
+  </footer>
+  </div>
+</body>
+</html>
