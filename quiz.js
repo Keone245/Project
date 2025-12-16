@@ -29,8 +29,8 @@ function showResults() {
     let numCorrect = 0;
     myQuestions.forEach((currentQuestion, questionNumber) => {
         const answerContainer = answerContainers[questionNumber];
-        const selector = input[name=question${questionNumber}]:checked;
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+    const selector = `input[name="question${questionNumber}"]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
 
         if (userAnswer === currentQuestion.correctAnswer) {
@@ -41,7 +41,7 @@ function showResults() {
         }
     });
 
-    resultsContainer.innerHTML = ${numCorrect} out of ${myQuestions.length};
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
 
     function showSlide(n) {
