@@ -1,3 +1,15 @@
+# Q3 Proposal Update
+
+## Real Madrid: The Best Club in the World
+## Features
+- Works on desktops, but is a work in progress for phones.
+- 
+
+## Definition of Done
+
+
+
+
 # **RMA: A Brief Look at the World's Best Club**
 
 ## **Description:**
