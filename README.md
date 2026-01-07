@@ -6,6 +6,11 @@
 - 
 
 ## Definition of Done
+- Once we have a working quiz. 
+- When the layout and design is neat and organized.
+- When all our researchand information is in our website.
+- Once all the photos are in the website and sized properly.
+- When all the features are working, such as the form. 
 
 
 
