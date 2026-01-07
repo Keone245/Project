@@ -2,15 +2,16 @@
 
 ## The Madrid Zone
 ## Features
-- Works on desktops, but is a work in progress for phones.
+- Works on desktops, and will soon to be for phones.
 - 
 
 ## Details
 
 ## Definition of Done
 - Once we have a working quiz. 
-- When the layout and design is neat and organized.
-- When all our researchand information is in our website.
+- When the layout and design is neat/organized and visually appealing.
+- When all our research and information is in our website.
+- Once the popover menus for our players work.
 - Once all the photos are in the website and sized properly.
 - When all the features are working, such as the form. 
 
