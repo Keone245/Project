@@ -1,9 +1,11 @@
 # Q3 Proposal Update
 
-## Real Madrid: The Best Club in the World
+## The Madrid Zone
 ## Features
 - Works on desktops, but is a work in progress for phones.
 - 
+
+## Details
 
 ## Definition of Done
 - Once we have a working quiz. 
