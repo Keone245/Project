@@ -9,11 +9,11 @@
 
 ## Definition of Done
 - Once we have a working quiz. 
-- When the layout and design is neat/organized and visually appealing.
-- When all our research and information is in our website.
-- Once the popover menus for our players work.
+- Once the layout and design is neat, organized and visually appealing.
+- Once all of our research and information is in our website.
+- Once the popover menus for our player infos work.
 - Once all the photos are in the website and sized properly.
-- When all the features are working, such as the form. 
+- Once all the features are working, such as the form. 
 
 
 
