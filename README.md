@@ -6,7 +6,7 @@
 - 
 
 ## Details
-- Our form will ask for the user's 
+- Our form will ask for the user's log in details so their answers to the statistics page will be saved. This will be the first new page for our website The second new page of our website will be the statistics page, where people can access the statistics of different players. Lastly, the third new page will be the statitsctics leaderboard, where it will display the most popular players based on the people's choice. 
 
 ## Definition of Done
 - Once we have a working quiz. 
