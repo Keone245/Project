@@ -8,7 +8,7 @@
 - Be able to log in to save their answers for the form/survey about their favoite things about the club.
 
 ## Details
-- Our form will ask for the user's log in details so their answers to the statistics page will be saved. This will be the first new page for our website, the sign up/log in page. The second new page of our website will be the statistics page, where people can answer like a survey/form that will ask them their favorite things about Real Madrid. Lastly, the third new page will be like a leaderboard or summary, where it will display the most popular answers based off the people's choice.. 
+- Our form will ask for the user's log in details so their answers to the statistics page will be saved. This will be the first new page for our website, the sign up/log in page. The second new page of our website will be the statistics page, where people can answer like a survey/form that will ask them their favorite things about Real Madrid. Lastly, the third new page will be like a leaderboard or summary, where it will display the most popular answers based off the people's choice. 
 
 ## Definition of Done
 - Once we have a working quiz. 
