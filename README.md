@@ -59,6 +59,16 @@ https://www.transfermarkt.com/jude-bellingham/leistungsdaten/spieler/581678/sais
 
 https://www.transfermarkt.com/vinicius-junior/leistungsdaten/spieler/371998/saison/2024/wettbewerb/CL
 
+https://businessday.ng/sports/article/real-madrid-lifts-15th-uefa-champions-league-trophy/
+
+https://www.marca.com/futbol/real-madrid/2018/05/26/5b09c7a3268e3ef84e8b4764.html
+
+https://real-madrid-website.weebly.com/history.html
+
+https://madriduniversal.com/how-real-madrid-can-secure-round-of-16-qualification-at-club-world-cup-and-who-are-their-possible-opponents/
+
+
+
 
 
 
