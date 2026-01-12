@@ -1,3 +1,28 @@
+# Q3 Proposal Update
+
+## The Madrid Zone
+## Features
+- Works on desktops, and will soon to be for phones.
+- Be able to answer a quiz about Real Madrid to test their knowledge on the club.
+- Be able to answer a survey/form which asks them about their favorite things about the club. This info will eventually be displayed in the third page.
+- Be able to log in to save their answers for the form/survey about their favoite things about the club.
+
+## Details
+- Our form will ask for the user's log in details so their answers to the statistics page will be saved. This will be the first new page for our website, the sign up/log in page. 
+- The second new page of our website will be the statistics page, where people can answer like a survey/form that will ask them their favorite things about Real Madrid. 
+- Lastly, the third new page will be like a leaderboard or summary, where it will display the most popular answers based off the people's choice. 
+
+## Definition of Done
+- Once we have a working quiz. 
+- Once the layout and design is neat, organized and visually appealing.
+- Once all of our research and information is in our website.
+- Once the popover menus for our player infos work.
+- Once all the photos are in the website and sized properly.
+- Once all the features are working, such as the form. 
+
+
+
+
 # **RMA: A Brief Look at the World's Best Club**
 
 ## **Description:**

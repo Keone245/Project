@@ -73,6 +73,8 @@ footer {
 }
 .my-image {
     padding-left: 10px;
+    object-fit: cover;
+    
   
 }
 .secondDiv {
@@ -91,3 +93,4 @@ footer {
     display: flex;
     flex: 0 0 50%;
 }
+
