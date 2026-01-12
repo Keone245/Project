@@ -17,16 +17,16 @@ body {
 }
 .mid-section-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     width: 100%;
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 50px;
+    gap: 20px;
 }
 .cover-content {
-    flex: 0 0 50%;
-}
-.cover-content {
+    flex: 1 1 40%;
     color:white;
     font-size: 23px;
     margin-left: 20px;
@@ -37,9 +37,20 @@ body {
     margin-left: 20px;
     font-size: 18px;
     text-align: justify;
-    display: flex;
-    flex: 0 0 50%;
+    display: block;
+    flex: 1 1 40%;
 }
+.my-image {
+    padding-left: 10px;
+    flex: 0 0 20%;
+}
+.my-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 6px;
+} 
 .main-nav {
     width: 100%;
     font-size: 20px;
@@ -65,11 +76,8 @@ body {
 }
 footer {
     text-align: center;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
-    display: flex;
-    justify-content: space-around;
-
 }
 .my-image {
     padding-left: 10px;
