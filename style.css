@@ -24,7 +24,7 @@ body {
     white-space: nowrap;
 }
 .cover-background-section {
-    background-color: darkslateblue;
+    background-color: rebeccapurple;
     font-size: 28px;
     margin: 0px;
     padding: 5px;
@@ -102,12 +102,12 @@ body {
 }
 .main-nav a {
     text-decoration: none;
-    color: burlywood;
+    color: white;
     padding: 15px 20px;
     display: block;
 }
 .main-nav a:hover {
-    background-color: cadetblue;
+    background-color: deepskyblue;
 }
 footer {
     text-align: center;
