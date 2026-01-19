@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body onload="requireLogin(); showUser();">
+<p id="welcome"></p>
+<p>Total Fans: <span id="total"></span></p>
+<p>Popular Player: <span id="player"></span></p>
+<p>Favorite Competition: <span id="competition"></span></p>
+
+<button onclick="logout()">Logout</button>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("total").textContent = fans.length;
+  document.getElementById("player").textContent = mostCommon("player");
+  document.getElementById("competition").textContent = mostCommon("competition");
+</script>
+</body>
+</html>
