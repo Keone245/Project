@@ -77,7 +77,7 @@ body {
   /* Give the article more room on larger screens */
   .cover-content { flex: 0 0 35%; }
   .firstDiv { flex: 0 0 55%; }
-  .my-image { flex: 0 0 10%; }
+  .my-image { flex: 0 0 70%; }
   .mid-section-container { padding-left: 40px; padding-right: 40px; }
   header h1 { font-size: clamp(28px, 4.2vw, 48px); }
 }
