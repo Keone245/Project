@@ -164,6 +164,7 @@ footer {
   padding:40px;
   background-color:blanchedalmond;
   font-family: 'Ultra', sans-serif;
+  text-align: justify;
 }
 
 #mydivjb {
@@ -171,6 +172,7 @@ footer {
   padding:40px;
   background-color:blanchedalmond;
   font-family: 'Ultra', sans-serif;
+  text-align: justify;
 }
 
 #mydivv {
@@ -178,6 +180,7 @@ footer {
   padding:40px;
   background-color:blanchedalmond;
   font-family: 'Ultra', sans-serif;
+  text-align: justify;
 }
 
 #mydivh {
@@ -185,4 +188,5 @@ footer {
     padding:40px;
     background-color:blanchedalmond;
     font-family: 'Ultra', sans-serif;
+    text-align: justify;
   }
