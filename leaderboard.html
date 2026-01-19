@@ -14,14 +14,18 @@
 <button onclick="logout()">Logout</button>
 <script src="script.js"></script>
 <script>
-  fans.sort((a, b) => a.since - b.since);
-  const list = document.getElementById("list");
+ if (Array.isArray(fans)) {
+    fans.sort((a, b) => a.since - b.since);
+    const list = document.getElementById("list");
 
-  fans.forEach(f => {
-    const li = document.createElement("li");
-    li.textContent = ${f.name} — Fan since ${f.since};
-    list.appendChild(li);
-  });
+    fans.forEach(f => {
+      const li = document.createElement("li");
+      li.textContent = `${f.name} — Fan since ${f.since}`;
+      list.appendChild(li);
+    });
+  } else {
+    console.error('fans is not defined or not an array');
+  }
 </script>
 </body>
 </html>
