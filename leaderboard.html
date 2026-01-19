@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body onload="requireLogin(); showUser();">
+<p id="welcome"></p>
+
+<ul id="list"></ul>
+<button onclick="logout()">Logout</button>
+<script src="script.js"></script>
+<script>
+  fans.sort((a, b) => a.since - b.since);
+  const list = document.getElementById("list");
+
+  fans.forEach(f => {
+    const li = document.createElement("li");
+    li.textContent = ${f.name} — Fan since ${f.since};
+    list.appendChild(li);
+  });
+</script>
+</body>
+</html>

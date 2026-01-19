@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fan Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="requireLogin(); showUser(); checkRegistration();">
+
+  <div class="page">
+
+    
+    <header class="header">
+      <h1>Fan Registration</h1>
+      <p id="welcome"></p>
+    </header>
+
+    
+    <main class="card">
+
+      
+      <nav class="nav">
+        <a href="index.html">Log</a>
+        <a href="history.html">History</a>
+        <a href="current.html">Current</a>
+        <a href="players&coaches.html">Players and Coaches</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="quiz.html"> Quiz</a>
+        <a href="sources.html">Sources</a>
+        <a href="register.html">Register</a>
+        <a href="stats.html" id="nav-stats">Statistics2</a>
+        <a href="leaderboard.html" id="nav-leaderboard">Leaderboard</a>
+        <a href="aboutme.html">about me</a>
+      </nav>
+
+      
+      <form id="fanForm">
+        <label>Favorite Player</label>
+        <select id="player">
+          <option>Vinícius Jr</option>
+          <option>Bellingham</option>
+          <option>Modrić</option>
+        </select>
+
+        <label>Favorite Competition</label>
+        <div class="radio-group">
+          <label><input type="radio" name="comp" value="La Liga" required> La Liga</label>
+          <label><input type="radio" name="comp" value="Champions League"> UCL</label>
+        </div>
+
+        <label>Fan Since (Year)</label>
+        <input type="number" id="since" required>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <button class="logout" onclick="logout()">Logout</button>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
