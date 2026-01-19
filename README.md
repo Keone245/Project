@@ -92,6 +92,11 @@ https://real-madrid-website.weebly.com/history.html
 
 https://madriduniversal.com/how-real-madrid-can-secure-round-of-16-qualification-at-club-world-cup-and-who-are-their-possible-opponents/
 
+https://sports.yahoo.com/article/photos-real-madrid-kylian-mbapp-152000334.html
+
+https://www.livescore.com/en/news/jude-bellingham-barcelona-real-madrid-el-clasico-laliga-preview-2023102713203892844/
+
+https://wallpapers.com/vini-jr
 
 
 
