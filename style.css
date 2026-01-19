@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: darkslategray;
+    background-color: cornflowerblue;
     background-size: 100%;
     font-family: 'Ultra', sans-serif;
     color:white;
@@ -24,7 +24,7 @@ body {
     white-space: nowrap;
 }
 .cover-background-section {
-    background-color: rebeccapurple;
+    background-color: seagreen;
     font-size: 28px;
     margin: 0px;
     padding: 5px;
@@ -179,3 +179,10 @@ footer {
   background-color:blanchedalmond;
   font-family: 'Ultra', sans-serif;
 }
+
+#mydivh {
+    text-align:center;
+    padding:40px;
+    background-color:blanchedalmond;
+    font-family: 'Ultra', sans-serif;
+  }
