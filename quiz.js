@@ -82,7 +82,7 @@ const myQuestions = [
             c: "1900",
             d: "1905"
         },
-        correctAnswer: "c"
+        correctAnswer: "a"
     },
     {
         question: "Which person has 15 goals and assists as of right now?",
