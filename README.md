@@ -1,3 +1,48 @@
+# Q4 Project Proposal Update Plan
+
+# A design and narrative (purpose and how it is to be used) on how the data saved in the localStorage be updated and removed.
+
+The purpose of the final modification is to improve our fan website for Real Madrid by implementing the complete CRUD (Create, Read, Update, Delete) process using localStorage.
+In the previous version of the website, the system already implemented the Create and Read parts of CRUD:
+Create – Users can register their fan profile by filling out a form containing their name, country, favorite player, and years supporting the club. The information is saved in the browser's localStorage.
+Read – The stored data is displayed in the Statistics and Leaderboard pages, where the website calculates fan statistics and ranks users based on years supporting Real Madrid. (so tuff)
+
+For the final modification, we will implement the remaining parts of CRUD:
+
+Update (U)
+
+Users will be able to edit their fan profile after registering.
+An Edit Profile button will appear on the profile section.
+When you click it :
+1. The stored data will automatically load into the forms.
+2. The user can now modify their information.
+3. When the user updates the form, the old local storage will be replaced by the new one.
+4. The Statistics2 page and the Leaderboard page will update automatically.
+
+This is useful because Users might want to change their information in the future.
+
+Delete (D)
+Users will be able to delete their profile from local storage.
+We will add a delete profile button at the page.
+
+When you click it :
+1. Your data will be removed from local storage
+2. The Statistics2 page and the Leaderboard page will automatically update.
+3. The user will be directed back to the login page.
+
+QOL improvements
+We aim to add these improvements to make the website more user friendly.
+1. Cleaner CSS
+2. Better Navigation towards pages
+3. Clear buttons for editing/ deleting profiles.
+4. Data will automatically update once changes occurs.
+
+# An updated wireframes on how #1 will be implemented on existing pages or new pages.
+* https://www.canva.com/design/DAHDV0-qD9U/TFK3WnZgH1UZ43tm23GAjQ/edit?utm_content=DAHDV0-qD9U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+
+
 # Q3 Proposal Update
 
 ## The Madrid Zone
