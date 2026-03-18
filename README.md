@@ -1,5 +1,23 @@
 # Q4 Project Proposal Update Plan
 
+# Who is this project for?
+This project is for Casual / Serious Real Madrid Fans who wants to see a fan made website where they can see some stats on players and they are able to share how long they've been fans, their favorite leagues, and etc.
+
+# He / She / They will love this project because
+You are able to log in and feel like you have an own account, you are able to share your favorite moments, how long they have been fans, and etc. You can also take a quiz to see if you really know the club. It's rare to find a website dedicated to Real Madrid so they will appreciate the work and effort the authors made.
+
+# This project features / includes
+A quiz to see if you really know your facts
+A log in feature to save your information and your stats
+A display feature to compare yourself with other Real Madrid Fans.
+Information of some players of the club and their stats
+The history of Real Madrid summarized
+
+# This Project does not include
+Other Stats of Real Madrid Players
+You cannot talk to other Fans, only compare statistics.
+
+
 # A design and narrative (purpose and how it is to be used) on how the data saved in the localStorage be updated and removed.
 
 The purpose of the final modification is to improve our fan website for Real Madrid by implementing the complete CRUD (Create, Read, Update, Delete) process using localStorage.
