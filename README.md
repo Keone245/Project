@@ -17,6 +17,8 @@ The history of Real Madrid summarized
 Other Stats of Real Madrid Players
 You cannot talk to other Fans, only compare statistics.
 
+# License
+We will be using the MIT license for this.
 
 # A design and narrative (purpose and how it is to be used) on how the data saved in the localStorage be updated and removed.
 
@@ -161,6 +163,8 @@ https://www.livescore.com/en/news/jude-bellingham-barcelona-real-madrid-el-clasi
 
 https://wallpapers.com/vini-jr
 
+
+Submitted by Keone Robles and David Babaran
 
 
 
