@@ -108,3 +108,28 @@ function disableLink(id) {
     link.style.opacity = "0.4";
   }
 }
+
+function refreshStats() {
+  // existing logic that reads localStorage 'users' and renders stats
+}
+// Listen for profile changes (other tabs + same tab)
+window.addEventListener('storage', function (e) {
+  if (e.key === 'users' || e.key === 'profileLastUpdated') {
+    if (typeof refreshStats === 'function') refreshStats();
+  }
+});
+window.addEventListener('profilesUpdated', function () {
+  if (typeof refreshStats === 'function') refreshStats();
+});
+
+function refreshLeaderboard() {
+  // existing logic to build leaderboard from localStorage 'users'
+}
+window.addEventListener('storage', function (e) {
+  if (e.key === 'users' || e.key === 'profileLastUpdated') {
+    if (typeof refreshLeaderboard === 'function') refreshLeaderboard();
+  }
+});
+window.addEventListener('profilesUpdated', function () {
+  if (typeof refreshLeaderboard === 'function') refreshLeaderboard();
+});

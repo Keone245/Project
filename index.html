@@ -33,17 +33,38 @@
       </ul>
     </nav>
   </main>
-  <div class="page">
-    <main class="card">
-      <form id="loginForm">
-        <label>Nickname</label>
-        <input type="text" id="name" required>
-        <button type="submit">Login</button>
-      </form>
-    </main>
-  </div>
+  <section id="profile-section">
+    <h2>Your Profile</h2>
   
-  <script src="script.js"></script>
+    <form id="profile-form" autocomplete="off">
+      <!-- Make sure input name keys match your stored user object keys (email used as primary id) -->
+      <label>Full name
+        <input type="text" name="fullName" disabled>
+      </label>
+  
+      <label>Email
+        <input type="email" name="email" disabled>
+      </label>
+  
+      <label>Favorite player
+        <input type="text" name="favoritePlayer" disabled>
+      </label>
+  
+      <!-- add other fields you store (age, team, score, etc.) -->
+      <label>Age
+        <input type="number" name="age" disabled>
+      </label>
+    </form>
+  
+    <div class="profile-actions">
+      <button id="edit-profile" type="button">Edit Profile</button>
+      <button id="save-profile" type="button" style="display:none;">Save</button>
+      <button id="cancel-edit" type="button" style="display:none;">Cancel</button>
+      <button id="delete-profile" type="button" class="danger">Delete Profile</button>
+    </div>
+  </section>
+  
+  <script src="profile.js"></script>
   <footer>
     <p>&copy; 2025 David Babaran and Keone Robles</p>
   </footer>

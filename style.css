@@ -61,16 +61,117 @@ body {
     margin: 0;
 }
 .my-image {
-    padding: 0 10px;
-    flex: 1 1 100%;
-}
-.my-image img {
-    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  
+  .image-card {
+    flex: 0 0 48%;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,0.02);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  img {
+    max-width: 100%;
     height: auto;
     display: block;
+  }
+  
+  /* Generic card image (used in .image-card already) */
+  .image-card img {
+    width: 100%;
+    max-width: 480px; /* cap very large images inside cards */
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Specific player / coach photo size */
+  .player-photo,
+  .coach-photo,
+  .current-photo {
+    max-width: 220px; /* sensible thumbnail width */
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 6px;
-}
+    display: block;
+  }
+  
+  /* Card / grid container for players so image + info align */
+  .player-card,
+  .coach-card,
+  .current-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  /* When screen is small stack vertically */
+  @media (max-width: 640px){
+    .player-card,
+    .coach-card,
+    .current-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .player-photo,
+    .coach-photo,
+    .current-photo {
+      max-width: 100%;
+    }
+  }
+  
+  
+  .image-card figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* NEW: place caption to the right of the image for certain cards */
+  .image-card--side {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    text-align: left;
+  }
+  .image-card--side img {
+    flex: 0 0 140px; /* fixed image width for side layout */
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .image-card--side figcaption {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #fff;
+    align-self: center;
+  }
+  
+  /* keep small screens stacking vertically */
+  @media (max-width: 600px) {
+    .image-card--side {
+      flex-direction: column;
+    }
+    .image-card--side img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
 
 /* Medium / large screens: set columns */
 @media (min-width: 900px) {
@@ -278,3 +379,8 @@ footer {
 .answers input[disabled] + label {
   opacity: 0.95;
 }
+
+.profile-actions { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+.profile-actions button { padding: 8px 12px; border-radius: 6px; border: none; cursor: pointer; background: #0b7285; color: #fff; }
+.profile-actions button.danger { background: #c0392b; }
+.profile-actions button[style*="display:none"] { display: none; }
