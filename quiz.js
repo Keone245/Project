@@ -140,7 +140,7 @@ const myQuestions = [
      {
         question: "What name is Real Madrid also known as?",
         answers: {
-            a: "Los blancos",
+            a: "Los Blancos",
             b: "Los mintos",
             c: "Los centos",
             d: "Los bantos"
