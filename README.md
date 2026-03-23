@@ -29,6 +29,11 @@ Read – The stored data is displayed in the Statistics and Leaderboard pages, w
 
 For the final modification, we will implement the remaining parts of CRUD:
 
+
+QOL improvements
+We aim to add these improvements to make the website more user friendly.
+1. Cleaner CSS
+2. Better Navigation towards p
 Update (U)
 
 Users will be able to edit their fan profile after registering.
@@ -49,11 +54,7 @@ When you click it :
 1. Your data will be removed from local storage
 2. The Statistics2 page and the Leaderboard page will automatically update.
 3. The user will be directed back to the login page.
-
-QOL improvements
-We aim to add these improvements to make the website more user friendly.
-1. Cleaner CSS
-2. Better Navigation towards pages
+ages
 3. Clear buttons for editing/ deleting profiles.
 4. Data will automatically update once changes occurs.
 
