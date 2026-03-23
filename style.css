@@ -248,3 +248,33 @@ footer {
     .quiz-wrapper { padding: 14px; margin: 12px; }
     .quiz-controls { justify-content: center; flex-wrap: wrap; }
   }
+  .answers label.correct-label,
+.answers label.correct-label * {
+  background: #e6ffef !important;
+  border-color: #2ea36f !important;
+  color: #044d2f !important;
+}
+
+.answers label.user-wrong,
+.answers label.user-wrong * {
+  background: #fff0f0 !important;
+  border-color: #de5b5b !important;
+  color: #7a1212 !important;
+}
+
+.correct-answer {
+  margin-top: 8px;
+  font-weight: 700;
+  color: #0b5e3b;
+  background: #f0fff5;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(46,163,111,0.12);
+  font-size: 0.95rem;
+}
+
+/* keep disabled inputs visually muted */
+.answers input:disabled + label,
+.answers input[disabled] + label {
+  opacity: 0.95;
+}
