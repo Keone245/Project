@@ -24,25 +24,68 @@ function buildQuiz() {
     quizContainer.innerHTML = output.join('');
 }
 
-function showResults() {
+function showResults(){
     const answerContainers = quizContainer.querySelectorAll('.answers');
     let numCorrect = 0;
+  
     myQuestions.forEach((currentQuestion, questionNumber) => {
-        const answerContainer = answerContainers[questionNumber];
-    const selector = `input[name="question${questionNumber}"]:checked`;
-    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-
-        if (userAnswer === currentQuestion.correctAnswer) {
-            numCorrect++;
-            answerContainers[questionNumber].style.color = 'green';
-        } else {
-            answerContainers[questionNumber].style.color = 'red';
+      const answerContainer = answerContainers[questionNumber];
+  
+      // clear previous markers
+      answerContainer.classList.remove('correct','incorrect');
+      answerContainer.querySelectorAll('.user-wrong, .correct-label').forEach(el => el.classList.remove('user-wrong','correct-label'));
+      const prevNote = answerContainer.querySelector('.correct-answer');
+      if(prevNote) prevNote.remove();
+  
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userInput = answerContainer.querySelector(selector);
+      const userAnswer = userInput ? userInput.value : undefined;
+  
+      if(userAnswer === currentQuestion.correctAnswer){
+        numCorrect++;
+        answerContainer.classList.add('correct');
+        // mark the correct label too for clarity
+        const correctInput = answerContainer.querySelector(`input[name=question${questionNumber}][value="${currentQuestion.correctAnswer}"]`);
+        if(correctInput){
+          const correctLabel = correctInput.closest('label') || document.querySelector(`label[for="${correctInput.id}"]`);
+          if(correctLabel) correctLabel.classList.add('correct-label');
         }
+      } else {
+        answerContainer.classList.add('incorrect');
+  
+        // mark user's wrong selection
+        if(userInput){
+          const userLabel = userInput.closest('label') || document.querySelector(`label[for="${userInput.id}"]`);
+          if(userLabel) userLabel.classList.add('user-wrong');
+        }
+  
+        // find correct option text and mark it
+        const correctInput = answerContainer.querySelector(`input[name=question${questionNumber}][value="${currentQuestion.correctAnswer}"]`);
+        let correctText = currentQuestion.correctAnswer;
+        if(correctInput){
+          const correctLabel = correctInput.closest('label') || document.querySelector(`label[for="${correctInput.id}"]`);
+          if(correctLabel){
+            correctLabel.classList.add('correct-label');
+            correctText = correctLabel.textContent.trim();
+          } else if(currentQuestion.answers){
+            correctText = currentQuestion.answers[currentQuestion.correctAnswer];
+          }
+        } else if(currentQuestion.answers){
+          correctText = currentQuestion.answers[currentQuestion.correctAnswer];
+        }
+  
+        const note = document.createElement('div');
+        note.className = 'correct-answer';
+        note.textContent = `Correct answer: ${correctText}`;
+        answerContainer.appendChild(note);
+      }
+  
+      // disable inputs to lock the quiz after submission
+      answerContainer.querySelectorAll('input').forEach(i => i.disabled = true);
     });
-
+  
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-}
+  }
 
     function showSlide(n) {
         const slides = document.querySelectorAll('.slide');

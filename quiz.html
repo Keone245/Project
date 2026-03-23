@@ -41,18 +41,24 @@
   </div>
   
 
-  <div class="firstDiv"> 
-    
-  <div class="quiz-container"></div>
-  <div id="quiz"></div>
-  <button id="previous">Previous Question</button>
-  <button id="next">Next Question</button>
-  <button id="submit">Submit Quiz</button>
-  <div id="results"></div>
-
-<script src="quiz.js"></script>
+  <div class="firstDiv">
+    <div class="quiz-wrapper">
+      <h3 class="quiz-title">Real Madrid quiz</h3>
+  
+      <div class="quiz-container"></div>
+      <div id="quiz" class="quiz-slides"></div>
+  
+      <div class="quiz-controls">
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+        <button id="submit">Submit Quiz</button>
+      </div>
+  
+      <div id="results" class="quiz-results" aria-live="polite"></div>
+    </div>
+  
+    <script src="quiz.js"></script>
   </div>
-
   
   
   </div>
