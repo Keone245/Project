@@ -133,3 +133,171 @@ window.addEventListener('storage', function (e) {
 window.addEventListener('profilesUpdated', function () {
   if (typeof refreshLeaderboard === 'function') refreshLeaderboard();
 });
+
+(function () {
+  const USERS_KEY = 'users';
+  const LOGGED_KEY = 'loggedInUserEmail';
+  const UPDATED_MARKER = 'profileLastUpdated';
+
+  const form = document.getElementById('profile-form');
+  if (!form) return;
+  const inputs = Array.from(form.querySelectorAll('input, select, textarea'));
+  const editBtn = document.getElementById('edit-profile');
+  const saveBtn = document.getElementById('save-profile');
+  const cancelBtn = document.getElementById('cancel-edit');
+  const deleteBtn = document.getElementById('delete-profile');
+
+  function getUsers() {
+    try { return JSON.parse(localStorage.getItem(USERS_KEY) || '[]'); } catch { return []; }
+  }
+  function setUsers(arr) {
+    localStorage.setItem(USERS_KEY, JSON.stringify(arr));
+    localStorage.setItem(UPDATED_MARKER, Date.now().toString());
+    window.dispatchEvent(new Event('profilesUpdated'));
+  }
+  function getLoggedEmail() { return localStorage.getItem(LOGGED_KEY); }
+  function setLoggedEmail(email) { if (email) localStorage.setItem(LOGGED_KEY, email); else localStorage.removeItem(LOGGED_KEY); }
+
+  function findCurrentUser() {
+    const email = getLoggedEmail();
+    if (!email) return null;
+    return getUsers().find(u => u.email === email) || null;
+  }
+
+  function populateForm(user) {
+    inputs.forEach(i => {
+      if (!i.name) return;
+      i.value = user && user[i.name] !== undefined ? user[i.name] : '';
+    });
+    setDisabled(true);
+  }
+
+  function setDisabled(disabled) {
+    inputs.forEach(i => i.disabled = !!disabled);
+    editBtn.style.display = disabled ? 'inline-block' : 'none';
+    saveBtn.style.display = disabled ? 'none' : 'inline-block';
+    cancelBtn.style.display = disabled ? 'none' : 'inline-block';
+  }
+
+ function saveProfile(e) {
+  e && e.preventDefault();
+
+  console.groupCollapsed('saveProfile debug');
+  try {
+    const emailInput = form.querySelector('input[name="email"]');
+    const emailVal = emailInput ? emailInput.value.trim() : '';
+    console.log('email input element exists?', !!emailInput, 'emailVal:', emailVal);
+
+    if (!emailInput || !emailVal) {
+      alert('Email is required.');
+      console.error('saveProfile aborted: missing email input or value.');
+      console.groupEnd();
+      return;
+    }
+
+    const users = getUsers();
+    console.log('users before save:', users);
+
+    const loggedEmail = getLoggedEmail();
+    console.log('loggedEmail (current):', loggedEmail);
+
+    const index = users.findIndex(u => u.email === loggedEmail);
+    console.log('found user index for loggedEmail:', index);
+
+    const updated = {};
+    inputs.forEach(i => { if (i.name) updated[i.name] = i.value; });
+    // ensure email field is set
+    if (!updated.email) updated.email = emailVal;
+
+    console.log('updated object to save:', updated);
+
+    if (index >= 0) {
+      // update existing user
+      users[index] = Object.assign({}, users[index], updated);
+      console.log('updated existing user at index', index);
+    } else {
+      // add new user
+      users.push(updated);
+      console.log('added new user');
+    }
+
+    // Persist users first
+    setUsers(users);
+
+    // mark as logged in using the email entered (always set)
+    setLoggedEmail(updated.email);
+    console.log('set logged email to:', updated.email);
+
+    setDisabled(true);
+    alert('Profile saved and you are now logged in.');
+    console.log('users after save:', getUsers());
+  } catch (err) {
+    console.error('saveProfile error:', err);
+    alert('An error occurred saving the profile. Check console.');
+  } finally {
+    console.groupEnd();
+  }
+}
+// ...existing code...
+
+// filepath: /c:/Users/STRONTIUM/Project-6/script.js
+// ...existing code...
+// Add quick runtime sanity checks after IIFE init (append near end of file)
+(function debugInit() {
+  // quick DOM checks
+  if (!form) console.error('profile form not found (id="profile-form").');
+  if (!editBtn) console.error('edit button not found (id="edit-profile").');
+  if (!saveBtn) console.error('save button not found (id="save-profile").');
+  if (!deleteBtn) console.error('delete button not found (id="delete-profile").');
+
+  // show current localStorage keys we're using
+  console.log('localStorage snapshot:', {
+    users: localStorage.getItem('users'),
+    loggedInUserEmail: localStorage.getItem('loggedInUserEmail'),
+    profileLastUpdated: localStorage.getItem('profileLastUpdated')
+  });
+})();
+
+  function deleteProfile() {
+    if (!confirm('Delete your profile? This cannot be undone.')) return;
+    const email = getLoggedEmail();
+    if (!email) { alert('No logged-in user.'); return; }
+    const users = getUsers().filter(u => u.email !== email);
+    setUsers(users);
+    setLoggedEmail(null);
+    alert('Profile deleted.');
+    // redirect to login or registration
+    window.location.href = 'register.html';
+  }
+
+  function cancelEdit(e) {
+    e && e.preventDefault();
+    populateForm(findCurrentUser());
+  }
+
+  // wire events
+  editBtn.addEventListener('click', () => setDisabled(false));
+  saveBtn.addEventListener('click', saveProfile);
+  cancelBtn.addEventListener('click', cancelEdit);
+  deleteBtn.addEventListener('click', deleteProfile);
+
+  // react to storage changes (other tabs)
+  window.addEventListener('storage', function (e) {
+    if (e.key === USERS_KEY || e.key === UPDATED_MARKER) {
+      populateForm(findCurrentUser());
+    }
+  });
+  // same-window update
+  window.addEventListener('profilesUpdated', function () { populateForm(findCurrentUser()); });
+
+  // init: if logged in populate, otherwise keep form disabled and show hint
+  const current = findCurrentUser();
+  if (current) populateForm(current);
+  else {
+    populateForm(null);
+    // If registration occurs elsewhere, saving there should set LOGGED_KEY
+    // Show the edit button only after login; keep save hidden until Edit clicked
+    editBtn.style.display = 'inline-block';
+    setDisabled(true);
+  }
+})();
