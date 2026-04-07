@@ -392,12 +392,22 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
-  border-radius: 4px;
+  min-width: 600px;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1;
+  flex-direction: row;
+  gap: 15px;
 }
 .dropdown:hover .dropdown-content {
-  display: inline-block;
+  display: flex;
 } 
+.dropbutton {
+  padding: 12px 24px;
+  font-size: 27px;
+  border: none;
+  border-radius: 5px;
+}
 .dropdown-content a:hover {
-  
+  border-radius: 4px;
 }
