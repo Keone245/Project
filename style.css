@@ -384,3 +384,20 @@ footer {
 .profile-actions button { padding: 8px 12px; border-radius: 6px; border: none; cursor: pointer; background: #0b7285; color: #fff; }
 .profile-actions button.danger { background: #c0392b; }
 .profile-actions button[style*="display:none"] { display: none; }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  border-radius: 4px;
+}
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+} 
+.dropdown-content a:hover {
+  
+}
