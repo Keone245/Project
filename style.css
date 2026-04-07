@@ -392,22 +392,36 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 600px;
+  min-width: 800px;
   border-radius: 8px;
-  padding: 10px;
-  z-index: 1;
+  padding: 20px;
+  z-index: 99;
   flex-direction: row;
   gap: 15px;
+  flex-wrap: wrap;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
 } 
 .dropbutton {
-  padding: 12px 24px;
+  padding: 15px 30px;
   font-size: 27px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  display: inline-block;
 }
 .dropdown-content a:hover {
   border-radius: 4px;
+}
+.dropdown-content a {
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 2px solid navy;
+  color: navy;
+  display: inline-block;
 }
