@@ -430,3 +430,16 @@ footer {
   display: inline-block;
   text-align: center;
 }
+.history-trigger {
+  padding: 3px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 2px solid navy;
+  color: navy;
+  display: inline-block;
+  text-align: center;
+}
