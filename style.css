@@ -5,7 +5,7 @@ body {
     background-color: cornflowerblue;
     background-size: 100%;
     font-family: 'Ultra', sans-serif;
-    color:white;
+    color:black;
     margin: 0;
 }
 
@@ -24,7 +24,9 @@ body {
     white-space: nowrap;
 }
 .cover-background-section {
-    background-color: seagreen;
+    background-color: navy;
+    border-bottom: 7px solid gold;
+   
     font-size: 28px;
     margin: 0px;
     padding: 5px;
@@ -42,17 +44,18 @@ body {
     margin: 0 auto;
     padding: 50px 20px 0 20px; /* internal padding instead of large left margins */
     gap: 20px;
+    color: black;
 }
 .cover-content {
     flex: 1 1 100%;
-    color: white;
+    color: black;
     font-size: 23px;
     padding: 0 10px;
     text-align: justify;
     margin: 0;
 }
 .firstDiv {
-    color: white;
+    color: black;
     padding: 0 10px;
     font-size: 18px;
     text-align: justify;
@@ -137,7 +140,7 @@ body {
   .image-card figcaption {
     margin-top: 8px;
     font-size: 0.9rem;
-    color: #fff;
+    color: black;
     text-align: center;
   }
   
@@ -158,7 +161,7 @@ body {
   .image-card--side figcaption {
     margin-top: 0;
     font-size: 1rem;
-    color: #fff;
+    color: black;
     align-self: center;
   }
   
@@ -203,7 +206,7 @@ body {
 }
 .main-nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 15px 20px;
     display: block;
 }
@@ -222,7 +225,7 @@ footer {
   
 }
 .secondDiv {
-    color:white;
+    color:black;
     margin-right: 20px;
     font-size: 18px;
     text-align: justify;
@@ -230,7 +233,7 @@ footer {
     flex: 0 0 50%;
 }
 .thirdDiv {
-    color:white;
+    color:black;
     margin-left: 20px;
     font-size: 18px;
     text-align: justify;
@@ -409,6 +412,7 @@ footer {
   border: none;
   border-radius: 8px;
   display: inline-block;
+  color: navy;
 }
 .dropdown-content a:hover {
   border-radius: 4px;
