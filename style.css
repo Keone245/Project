@@ -392,13 +392,13 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 800px;
+  min-width: 95%;
   border-radius: 8px;
   padding: 20px;
   z-index: 99;
   flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 8px;
+  flex-wrap: nowrap;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
