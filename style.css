@@ -458,9 +458,9 @@ footer {
 }
 .login-cornerbtn {
   position: absolute;
-  top: 20px;
-  right: 30 px;
-  padding: 3px 20px;
+  top: 35px;
+  right: 40px;
+  padding: 8px 20px;
   text-decoration: none;
   border-radius: 5px;
   font-family: sans-serif;
