@@ -25,7 +25,8 @@ body {
 }
 .cover-background-section {
     background-color: navy;
-    border-bottom: 7px solid gold;
+    border-bottom: 7px solid crimson;
+    border-top: 7px solid gold;
     position: relative;
     font-size: 28px;
     margin: 0px;
@@ -45,7 +46,7 @@ body {
     padding: 50px 20px 0 20px; /* internal padding instead of large left margins */
     gap: 20px;
     color: black;
-    border-top: 7px solid crimson;
+   
 }
 .cover-content {
     flex: 1 1 100%;
