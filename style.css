@@ -296,6 +296,27 @@ footer {
     font-family: 'Ultra', sans-serif;
     text-align: justify;
   }
+#mydivval {
+    text-align:center;
+    padding:40px;
+    background-color:blanchedalmond;
+    font-family: 'Ultra', sans-serif;
+    text-align: justify;
+  }
+#mydivc {
+    text-align:center;
+    padding:40px;
+    background-color:blanchedalmond;
+    font-family: 'Ultra', sans-serif;
+    text-align: justify;
+  }
+#mydivr {
+    text-align:center;
+    padding:40px;
+    background-color:blanchedalmond;
+    font-family: 'Ultra', sans-serif;
+    text-align: justify;
+  }
 
   /* CSS - add to style.css */
 .quiz-wrapper {
