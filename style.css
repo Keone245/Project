@@ -45,6 +45,7 @@ body {
     padding: 50px 20px 0 20px; /* internal padding instead of large left margins */
     gap: 20px;
     color: black;
+    border-top: 7px solid crimson;
 }
 .cover-content {
     flex: 1 1 100%;
