@@ -65,8 +65,11 @@
       }
   
       setUsers(users);
-      setDisabled(true);
-      alert('Profile updated.');
+      setLoggedEmail(updated.email);
+    
+      // sync to the fans list so leaderboard/stats show the full name
+      if (typeof syncProfileToFans === 'function') syncProfileToFans(updated);
+    
     }
   
     function deleteProfile() {
@@ -105,3 +108,20 @@
     // init
     populateForm(findCurrentUser());
   })();
+// ...existing code...
+function getLoggedEmail() { return localStorage.getItem(LOGGED_KEY); }
+   function setLoggedEmail(email) {
+     if (email) localStorage.setItem(LOGGED_KEY, email);
+     else localStorage.removeItem(LOGGED_KEY);
+     // mark update so listeners refresh
+     localStorage.setItem(UPDATED_MARKER, Date.now().toString());
+    window.dispatchEvent(new Event('profilesUpdated'));
+   }
+  
+    function findCurrentUser() {
+      const email = getLoggedEmail();
+      if (!email) return null;
+      return getUsers().find(u => u.email === email) || null;
+    }
+ // ...existing code...
+ 

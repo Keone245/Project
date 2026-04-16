@@ -8,21 +8,60 @@ function login(e) {
   const name = document.getElementById("name").value.trim();
   if (!name) return;
 
+  // fans is already read at top of script.js, but re-read to be safe
+  const fansList = JSON.parse(localStorage.getItem("fans") || "[]");
+  const exists = fansList.find(f => f.name === name);
+
+  // set session token so we can identify the logged-in user across pages
   localStorage.setItem("currentFan", name);
-  window.location.href = "register.html";
+
+  // if exists -> go to their dashboard; if not -> go to Register (you already have register.html)
+  if (exists) window.location.href = "register.html"; // or a dashboard page
+  else window.location.href = "register.html";
 }
 
 
-function requireLogin() {
-  if (!localStorage.getItem("currentFan")) {
-    alert("Please log in first.");
-    window.location.href = "index.html";
+function requireLogin(redirectTo = 'index.html') {
+  const logged = localStorage.getItem('currentFan') || localStorage.getItem('loggedInUserEmail');
+  if (!logged) {
+    alert('Please log in or register first.');
+    window.location.href = redirectTo;
+    return false;
   }
+  return true;
 }
+function syncProfileToFans(profile) {
+  // ensure fans array exists
+  const fans = JSON.parse(localStorage.getItem('fans') || '[]');
 
+  const name = (profile.fullName || profile.fullname || profile.name || '').trim();
+  if (!name) return; // nothing to sync
+
+  // try to find an existing fan by name (you can change matching key if you prefer email)
+  let fan = fans.find(f => f.name === name);
+
+  if (!fan) {
+    fan = {
+      name,
+      player: profile.favoritePlayer || profile.player || 'N/A',
+      competition: profile.competition || profile.comp || 'N/A',
+      since: parseInt(profile.since) || (new Date()).getFullYear()
+    };
+    fans.push(fan);
+  } else {
+    // update non-empty fields from profile
+    fan.player = profile.favoritePlayer || profile.player || fan.player;
+    fan.competition = profile.competition || profile.comp || fan.competition;
+    fan.since = parseInt(profile.since) || fan.since;
+  }
+
+  localStorage.setItem('fans', JSON.stringify(fans));
+}
 
 function logout() {
-  localStorage.removeItem("currentFan");
+ 
+  localStorage.removeItem("currentFan");           
+  localStorage.removeItem("loggedInUserEmail");     
   alert("Logged out.");
   window.location.href = "index.html";
 }
@@ -299,5 +338,24 @@ window.addEventListener('profilesUpdated', function () {
     // Show the edit button only after login; keep save hidden until Edit clicked
     editBtn.style.display = 'inline-block';
     setDisabled(true);
+  }})();
+  function syncProfileToFans(profile) {
+    const fans = JSON.parse(localStorage.getItem('fans') || '[]');
+    const name = (profile.fullName || profile.fullname || profile.name || '').trim();
+    if (!name) return;
+    let fan = fans.find(f => f.name === name);
+    if (!fan) {
+      fan = {
+        name,
+        player: profile.favoritePlayer || profile.player || 'N/A',
+        competition: profile.competition || profile.comp || 'N/A',
+        since: parseInt(profile.since) || (new Date()).getFullYear()
+      };
+      fans.push(fan);
+    } else {
+      fan.player = profile.favoritePlayer || profile.player || fan.player;
+      fan.competition = profile.competition || profile.comp || fan.competition;
+      fan.since = parseInt(profile.since) || fan.since;
+    }
+    localStorage.setItem('fans', JSON.stringify(fans));
   }
-})();
